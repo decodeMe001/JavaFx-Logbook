@@ -1,2 +1,0 @@
-# eSchedule
-Lecture Scheduller
