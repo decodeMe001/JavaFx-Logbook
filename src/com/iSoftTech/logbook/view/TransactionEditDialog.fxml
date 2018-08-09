@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iSoftTech.logbook.view.TransactionEditDialogController">
+   <children>
+      <GridPane layoutX="1.0" layoutY="98.0" prefHeight="603.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="205.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="385.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Commission Deu:" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="E-Float:" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Transaction Type:" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Transaction Amount:" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Transaction Fee:" wrapText="true" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Client's Name:" wrapText="true" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Client's Phone:" wrapText="true" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Recipient's Name:" wrapText="true" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Recipient's Phone:" wrapText="true" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Transaction Date:" wrapText="true" GridPane.rowIndex="12">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Transaction Time:" wrapText="true" GridPane.rowIndex="13">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="commDeuLabel" focusColor="RED" promptText="Enter Commission Deu" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="eFLabel" focusColor="RED" promptText="Enter E-Float" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txnTypeLabel" focusColor="RED" promptText="Enter Tnx Type" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clientName" focusColor="RED" promptText="Enter Client's Name" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="reciNameLabel" focusColor="RED" promptText="Enter Recipient's Name" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="bankName" focusColor="RED" promptText="Enter Bank Details" GridPane.columnIndex="1" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txnAmountLabel" focusColor="RED" promptText="Enter Txn Amount(Supply -value if it's a Withdrawal)" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txnFeeLabel" focusColor="RED" promptText="Enter Txn Fee" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="phNumberLabel" focusColor="RED" promptText="Enter Client's Phone" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="reciPhoneLabel" focusColor="RED" promptText="Enter Recipient's Phone" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="timePickLabel" editable="false" promptText="Enter Time" showTime="true" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <JFXDatePicker fx:id="datePickLabel" defaultColor="#009485" editable="false" promptText="Pick a Date" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label text="Transaction ID:" wrapText="true">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Account Number:" wrapText="true" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="reciAcctNumber" focusColor="RED" promptText="Enter Account Number" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="reciTxnID" prefHeight="16.0" prefWidth="113.0" text="ID" textFill="#380bee" wrapText="true" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Bank Name:" wrapText="true" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="saveData" defaultButton="true" layoutX="281.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="110.0" styleClass="optkey-btn1" stylesheets="@style/ButtonTheme.css" text="SAVE" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="130.0">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="updateData" layoutX="316.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="35.0" prefWidth="110.0" styleClass="optkey-btn2" stylesheets="@style/ButtonTheme.css" text="UPDATE" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnClose" layoutX="575.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="36.0" prefWidth="38.0" stylesheets="@style/btnOnText.css" AnchorPane.bottomAnchor="710.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="com.iSoftTech.logbook.view.IncomeChartController">
+   <children>
+      <PieChart fx:id="incomeChart" layoutX="45.0" layoutY="86.0" prefHeight="400.0" prefWidth="549.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="336.0" layoutY="25.0" text="Monthly Income Performance Chart" textAlignment="CENTER" textFill="#26a26a" underline="true" wrapText="true" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

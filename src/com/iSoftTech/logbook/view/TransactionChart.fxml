@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iSoftTech.logbook.view.TransactionChartController">
+   <children>
+      <BarChart fx:id="barChart" prefHeight="450.0" prefWidth="620.0" title="Monthly Chart Performance" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" tickLabelRotation="-90.0" fx:id="xAxis">
+               <tickLabelFont>
+                  <Font name="Georgia Bold" size="12.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+         </xAxis>
+         <yAxis>
+            <NumberAxis autoRanging="false" side="LEFT" tickLabelGap="5.0" tickUnit="1.0" upperBound="11.0">
+               <tickLabelFont>
+                  <Font name="Georgia Bold Italic" size="10.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
